@@ -207,6 +207,10 @@ df_panel_seq <-
   filter(row_number() <= 14) %>%
   mutate(ndata = n()) %T>%
   print()
+
+# Append group ID for the sequence data. 
+
+df_panel_seq$day_id <- group_indices(df_panel_seq)
 ```
 
 According to the data format, for each day, the first sequence is composed by 
@@ -355,8 +359,8 @@ fine tune the model performance.
 ```{r}
 # Large sizes of epoch and batch will induce longer training time.
 
-epoch_size <- 200
-batch_size <- 1
+epoch_size <- 10
+batch_size <- 5
 
 # Validating sets can be used to validate the model.
 
