@@ -2,6 +2,8 @@
 # Get data processed in Spark.
 # -----------------------------------------------------------------------------
 
+if(!require("devtools")) install.packages("devtools")
+devtools::install_github("Microsoft/AzureSMR")
 library(AzureSMR)
 library(jsonlite)
 library(dplyr)
