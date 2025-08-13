@@ -34,3 +34,11 @@ vignettes/*.pdf
 .Rproj.user
 
 *~
+.vs/*
+*.sln
+*/*.Rproj
+*/*.rxproj
+*/*.user
+*.suo
+GalaxyClassificationWorkflow/galaxy.rxproj
+
